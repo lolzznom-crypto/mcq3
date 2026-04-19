@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OB MCQs Practice - Dhvani</title>
+<title>OB Practice Quiz - Dhvani</title>
 
 <style>
-/* Importing a loving cursive font */
+/* Loving cursive font for the special message */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 body {
@@ -96,7 +96,7 @@ button.active {
     display: none; 
 }
 
-/* Loving Message Styling with Hearts */
+/* Loving Message Wrapper and Hearts */
 .special-message-wrapper {
     position: relative;
     margin: 60px auto;
@@ -120,21 +120,20 @@ button.active {
 .heart {
     position: absolute;
     color: #ff85a2;
-    font-size: 24px;
+    font-size: 28px;
     animation: pulse 1.5s infinite ease-in-out;
     pointer-events: none;
 }
 
-/* Positioning hearts around the box */
-.h1 { top: -20px; left: -10px; animation-delay: 0s; }
-.h2 { top: -25px; right: 20px; animation-delay: 0.3s; }
-.h3 { bottom: -15px; left: 30%; animation-delay: 0.6s; }
-.h4 { top: 40%; right: -25px; animation-delay: 0.9s; }
-.h5 { bottom: 10px; right: -15px; animation-delay: 1.2s; }
+.h1 { top: -25px; left: -15px; animation-delay: 0s; }
+.h2 { top: -30px; right: 25px; animation-delay: 0.3s; }
+.h3 { bottom: -20px; left: 25%; animation-delay: 0.6s; }
+.h4 { top: 45%; right: -30px; animation-delay: 0.9s; }
+.h5 { bottom: 5px; left: -20px; animation-delay: 1.2s; }
 
 @keyframes pulse {
     0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.3); opacity: 1; }
+    50% { transform: scale(1.4); opacity: 1; }
     100% { transform: scale(1); opacity: 0.8; }
 }
 
@@ -163,11 +162,12 @@ button.active {
             Mera bacha <span class="emoji">🫂</span>
         </div>
     </div>
+    Where are my boobies?
 </div>
 
 <script>
 const mcqs = [
-    // Questions 1-50
+    // 1-50 Set 1
     {q: "1. OB studies:", options: ["A. Financial markets", "B. Human behaviour in organizations", "C. Marketing strategies", "D. Production systems"], a: "B"},
     {q: "2. Which discipline contributes most to understanding individual behaviour in OB?", options: ["A. Sociology", "B. Psychology", "C. Economics", "D. History"], a: "B"},
     {q: "3. The Hawthorne studies were conducted at:", options: ["A. Ford Company", "B. General Motors", "C. Western Electric", "D. IBM"], a: "C"},
@@ -219,59 +219,59 @@ const mcqs = [
     {q: "49. Psychology studies:", options: ["A. Group behaviour", "B. Individual behaviour", "C. Culture", "D. Society"], a: "B"},
     {q: "50. Anthropology studies:", options: ["A. Markets", "B. Culture & society", "C. Finance", "D. Production"], a: "B"},
 
-    // Questions 51-100
-    {q: "51. Democratic leadership means", options: ["A) Participation", "B) Control", "C) Force", "D) Isolation"], a: "A"},
-    {q: "52. Autocratic leadership means", options: ["A) Centralized decision", "B) Group decision", "C) No decision", "D) Freedom"], a: "A"},
-    {q: "53. Laissez-faire means", options: ["A) Freedom", "B) Control", "C) Rules", "D) Pressure"], a: "A"},
-    {q: "54. Management includes", options: ["A) Planning", "B) Organizing", "C) Controlling", "D) All"], a: "D"},
-    {q: "55. Expectancy theory is by", options: ["A) Vroom", "B) Adams", "C) Maslow", "D) Herzberg"], a: "A"},
-    {q: "56. Hygiene factors are", options: ["A) Salary", "B) Policy", "C) Conditions", "D) All"], a: "D"},
-    {q: "57. Motivators are", options: ["A) Achievement", "B) Growth", "C) Recognition", "D) All"], a: "D"},
-    {q: "58. McClelland includes", options: ["A) Need for power", "B) Need for achievement", "C) Need for affiliation", "D) All"], a: "D"},
-    {q: "59. Organizational commitment means", options: ["A) Loyalty to organization", "B) Leaving job", "C) Conflict", "D) Stress"], a: "A"},
-    {q: "60. Job enrichment means", options: ["A) Increasing responsibility", "B) Reducing work", "C) Salary increase", "D) Promotion"], a: "A"},
-    {q: "61. Job rotation means", options: ["A) Changing jobs", "B) Same job", "C) Promotion", "D) Training"], a: "A"},
-    {q: "62. Absenteeism means", options: ["A) Being absent from work", "B) Working extra", "C) Promotion", "D) Training"], a: "A"},
-    {q: "63. Turnover means", options: ["A) Leaving job", "B) Joining job", "C) Promotion", "D) Training"], a: "A"},
-    {q: "64. Performance appraisal means", options: ["A) Evaluating performance", "B) Hiring", "C) Training", "D) Promotion"], a: "A"},
-    {q: "65. Selection means", options: ["A) Choosing candidates", "B) Training", "C) Promotion", "D) Firing"], a: "A"},
-    {q: "66. Human resource management deals with", options: ["A) Employees", "B) Machines", "C) Products", "D) Finance"], a: "A"},
-    {q: "67. Organizational structure refers to", options: ["A) Hierarchy", "B) Culture", "C) Behaviour", "D) Attitude"], a: "A"},
-    {q: "68. Formal communication means", options: ["A) Official communication", "B) Informal talk", "C) Gossip", "D) Rumours"], a: "A"},
-    {q: "69. Informal communication means", options: ["A) Grapevine", "B) Official", "C) Written", "D) Formal"], a: "A"},
-    {q: "70. Grapevine communication is", options: ["A) Informal", "B) Formal", "C) Written", "D) Official"], a: "A"},
-    {q: "71. Decision making involves", options: ["A) Choosing alternatives", "B) Ignoring", "C) Avoiding", "D) Random"], a: "A"},
-    {q: "72. Problem solving means", options: ["A) Finding solution", "B) Ignoring", "C) Avoiding", "D) Delaying"], a: "A"},
-    {q: "73. Organizational conflict occurs due to", options: ["A) Disagreement", "B) Agreement", "C) Cooperation", "D) Satisfaction"], a: "A"},
-    {q: "74. Stress management includes", options: ["A) Relaxation", "B) Exercise", "C) Time management", "D) All"], a: "D"},
-    {q: "75. Work environment includes", options: ["A) Physical conditions", "B) Social conditions", "C) Psychological conditions", "D) All"], a: "D"},
-    {q: "76. Motivation increases", options: ["A) Performance", "B) Stress", "C) Conflict", "D) Absenteeism"], a: "A"},
-    {q: "77. Job satisfaction leads to", options: ["A) Better performance", "B) Turnover", "C) Absenteeism", "D) Conflict"], a: "A"},
-    {q: "78. Low satisfaction leads to", options: ["A) Turnover", "B) Motivation", "C) Performance", "D) Loyalty"], a: "A"},
-    {q: "79. High commitment leads to", options: ["A) Staying longer", "B) Leaving job", "C) Conflict", "D) Stress"], a: "A"},
-    {q: "80. OCB includes", options: ["A) Helping others", "B) Ignoring work", "C) Conflict", "D) Absenteeism"], a: "A"},
-    {q: "81. Attitude has components", options: ["A) Cognitive", "B) Affective", "C) Behavioural", "D) All"], a: "D"},
-    {q: "82. Personality refers to", options: ["A) Individual traits", "B) Group traits", "C) Skills", "D) Knowledge"], a: "A"},
-    {q: "83. Perception means", options: ["A) Interpretation", "B) Observation", "C) Learning", "D) Thinking"], a: "A"},
-    {q: "84. Learning theories include", options: ["A) Classical conditioning", "B) Operant conditioning", "C) Social learning", "D) All"], a: "D"},
-    {q: "85. Classical conditioning by", options: ["A) Pavlov", "B) Skinner", "C) Bandura", "D) Freud"], a: "A"},
-    {q: "86. Operant conditioning by", options: ["A) Skinner", "B) Pavlov", "C) Freud", "D) Bandura"], a: "A"},
-    {q: "87. Social learning by", options: ["A) Bandura", "B) Pavlov", "C) Skinner", "D) Freud"], a: "A"},
-    {q: "88. Reinforcement theory by", options: ["A) Skinner", "B) Pavlov", "C) Freud", "D) Bandura"], a: "A"},
-    {q: "89. Maslow theory by", options: ["A) Maslow", "B) Herzberg", "C) Vroom", "D) Adams"], a: "A"},
-    {q: "90. Herzberg theory is", options: ["A) Two-factor theory", "B) Equity theory", "C) Expectancy theory", "D) Reinforcement theory"], a: "A"},
-    {q: "91. Expectancy theory focuses on", options: ["A) Motivation", "B) Learning", "C) Behaviour", "D) Emotion"], a: "A"},
-    {q: "92. Equity theory compares", options: ["A) Input-output ratio", "B) Salary only", "C) Work only", "D) Effort only"], a: "A"},
-    {q: "93. Need hierarchy includes", options: ["A) Physiological", "B) Safety", "C) Social", "D) All"], a: "D"},
-    {q: "94. Safety needs include", options: ["A) Security", "B) Food", "C) Esteem", "D) Love"], a: "A"},
-    {q: "95. Social needs include", options: ["A) Belongingness", "B) Security", "C) Food", "D) Salary"], a: "A"},
-    {q: "96. Esteem needs include", options: ["A) Respect", "B) Food", "C) Safety", "D) Security"], a: "A"},
-    {q: "97. Self-actualization means", options: ["A) Full potential", "B) Security", "C) Food", "D) Salary"], a: "A"},
-    {q: "98. Leadership styles include", options: ["A) Autocratic", "B) Democratic", "C) Laissez-faire", "D) All"], a: "D"},
-    {q: "99. Organizational behaviour helps in", options: ["A) Understanding employees", "B) Machines", "C) Finance", "D) Marketing"], a: "A"},
-    {q: "100. HRM functions include", options: ["A) Recruitment", "B) Training", "C) Appraisal", "D) All"], a: "D"},
+    // 51-100 Set 2
+    {q: "51. Watching employees directly is called:", options: ["A. Survey", "B. Observation", "C. Experiment", "D. Interview"], a: "B"},
+    {q: "52. Employee attitude refers to:", options: ["A. Skills", "B. Feelings about work", "C. Salary", "D. Experience"], a: "B"},
+    {q: "53. Job satisfaction means:", options: ["A. High salary", "B. Positive feelings about job", "C. Promotion", "D. Pressure"], a: "B"},
+    {q: "54. Low job satisfaction leads to:", options: ["A. Loyalty", "B. Turnover", "C. Motivation", "D. Commitment"], a: "B"},
+    {q: "55. Employees with high commitment usually:", options: ["A. Leave job", "B. Stay longer", "C. Avoid work", "D. Change jobs"], a: "B"},
+    {q: "56. Organizational Citizenship Behaviour (OCB) means:", options: ["A. Paid work", "B. Helping others voluntarily", "C. Strict discipline", "D. Punishment"], a: "B"},
+    {q: "57. Helping coworkers voluntarily is an example of:", options: ["A. Leadership", "B. OCB", "C. Motivation", "D. Authority"], a: "B"},
+    {q: "58. Motivation refers to:", options: ["A. Salary", "B. Driving forces of behaviour", "C. Rules", "D. Training"], a: "B"},
+    {q: "59. Maslow proposed hierarchy of needs with how many levels?", options: ["A. 3", "B. 4", "C. 5", "D. 6"], a: "C"},
+    {q: "60. The lowest level in Maslow’s hierarchy is:", options: ["A. Safety", "B. Social", "C. Physiological", "D. Esteem"], a: "C"},
+    {q: "61. Food and water belong to:", options: ["A. Safety needs", "B. Social needs", "C. Physiological needs", "D. Esteem needs"], a: "C"},
+    {q: "62. Security and protection belong to:", options: ["A. Social needs", "B. Safety needs", "C. Esteem needs", "D. Self-actualization"], a: "B"},
+    {q: "63. Friendship and love belong to:", options: ["A. Safety", "B. Social needs", "C. Esteem", "D. Physiological"], a: "B"},
+    {q: "64. Respect and recognition belong to:", options: ["A. Social needs", "B. Esteem needs", "C. Safety needs", "D. Physiological"], a: "B"},
+    {q: "65. Self-actualization means:", options: ["A. Salary", "B. Full potential", "C. Security", "D. Friendship"], a: "B"},
+    {q: "66. Need for achievement theory was developed by:", options: ["A. Maslow", "B. McClelland", "C. Herzberg", "D. Adams"], a: "B"},
+    {q: "67. Need for affiliation means:", options: ["A. Power", "B. Desire for relationships", "C. Success", "D. Security"], a: "B"},
+    {q: "68. Need for power refers to:", options: ["A. Friendship", "B. Influencing others", "C. Growth", "D. Safety"], a: "B"},
+    {q: "69. Two-factor theory was developed by:", options: ["A. Maslow", "B. Herzberg", "C. Vroom", "D. Locke"], a: "B"},
+    {q: "70. Herzberg divided factors into:", options: ["A. Internal & external", "B. Hygiene & motivator", "C. Social & economic", "D. Personal & group"], a: "B"},
+    {q: "71. Salary and company policies are:", options: ["A. Motivators", "B. Hygiene factors", "C. Social factors", "D. Growth factors"], a: "B"},
+    {q: "72. Achievement and recognition are:", options: ["A. Hygiene", "B. Motivators", "C. Safety", "D. Social"], a: "B"},
+    {q: "73. Goal-setting theory was proposed by:", options: ["A. Adams", "B. Locke", "C. Vroom", "D. Maslow"], a: "B"},
+    {q: "74. Goal-setting theory states:", options: ["A. Easy goals work best", "B. Specific goals improve performance", "C. No goals needed", "D. Random goals"], a: "B"},
+    {q: "75. Difficult goals usually:", options: ["A. Reduce performance", "B. Increase motivation", "C. Have no effect", "D. Confuses employees"], a: "B"},
+    {q: "76. Equity theory was developed by:", options: ["A. Vroom", "B. Adams", "C. Herzberg", "D. McClelland"], a: "B"},
+    {q: "77. Equity theory focuses on:", options: ["A. Leadership", "B. Fairness", "C. Training", "D. Communication"], a: "B"},
+    {q: "78. Employees compare rewards with:", options: ["A. Managers", "B. Other employees", "C. Customers", "D. Machines"], a: "B"},
+    {q: "79. Expectancy theory was developed by:", options: ["A. Adams", "B. Vroom", "C. Locke", "D. Herzberg"], a: "B"},
+    {q: "80. Expectancy theory explains motivation through:", options: ["A. Punishment", "B. Expectations", "C. Rules", "D. Culture"], a: "B"},
+    {q: "81. Instrumentality refers to:", options: ["A. Effort", "B. Belief that performance leads to reward", "C. Salary", "D. Skills"], a: "B"},
+    {q: "82. Valence means:", options: ["A. Effort", "B. Value of reward", "C. Performance", "D. Ability"], a: "B"},
+    {q: "83. Feedback helps employees to:", options: ["A. Relax", "B. Improve performance", "C. Leave job", "D. Reduce effort"], a: "B"},
+    {q: "84. Clear goals help employees to:", options: ["A. Avoid work", "B. Focus effort", "C. Reduce performance", "D. Increase stress"], a: "B"},
+    {q: "85. Satisfied employees usually show:", options: ["A. Negative attitude", "B. Positive attitude", "C. No change", "D. Conflict"], a: "B"},
+    {q: "86. Motivation increases when:", options: ["A. Work increases", "B. Rewards are valued", "C. Rules increase", "D. Control increases"], a: "B"},
+    {q: "87. Process theories focus on:", options: ["A. Needs", "B. Thinking processes", "C. Salary", "D. Structure"], a: "B"},
+    {q: "88. OB knowledge helps in:", options: ["A. Production only", "B. Better management", "C. Accounting", "D. Marketing"], a: "B"},
+    {q: "89. Which discipline studies human mind and behaviour?", options: ["A. Sociology", "B. Psychology", "C. Anthropology", "D. Economics"], a: "B"},
+    {q: "90. Sociology helps OB understand:", options: ["A. Individual behaviour", "B. Group behaviour", "C. Machines", "D. Finance"], a: "B"},
+    {q: "91. Anthropology contributes by studying:", options: ["A. Markets", "B. Culture and traditions", "C. Finance", "D. Production"], a: "B"},
+    {q: "92. Research in OB helps managers to:", options: ["A. Control employees", "B. Understand employees", "C. Reduce cost", "D. Increase machines"], a: "B"},
+    {q: "93. Hawthorne studies were conducted at:", options: ["A. IBM", "B. Western Electric", "C. Ford", "D. Infosys"], a: "B"},
+    {q: "94. Hawthorne effect means:", options: ["A. Less work", "B. Behaviour changes when observed", "C. More salary", "D. Conflict"], a: "B"},
+    {q: "95. Survey method is used for:", options: ["A. Observation", "B. Collecting data through questions", "C. Experiment", "D. Case study"], a: "B"},
+    {q: "96. Observation method involves:", options: ["A. Asking", "B. Watching behaviour directly", "C. Testing", "D. Calculating"], a: "B"},
+    {q: "97. Experimental method studies:", options: ["A. Opinions", "B. Cause and effect", "C. Culture", "D. Skills"], a: "B"},
+    {q: "98. Case study focuses on:", options: ["A. Large group", "B. Detailed study of one case", "C. Survey", "D. Statistics"], a: "B"},
+    {q: "99. Organizational behaviour knowledge helps:", options: ["A. Reduce work", "B. Improve organization", "C. Increase conflict", "D. Avoid decisions"], a: "B"},
+    {q: "100. Motivation theories help managers to:", options: ["A. Control employees", "B. Improve performance", "C. Reduce staff", "D. Increase pressure"], a: "B"},
 
-    // Questions 101-150
+    // 101-150 Set 3
     {q: "101. Organizational effectiveness means", options: ["A) Achieving goals", "B) Profit only", "C) Loss", "D) Conflict"], a: "A"},
     {q: "102. Efficiency means", options: ["A) Doing work properly", "B) Doing work fast", "C) Doing less work", "D) Ignoring work"], a: "A"},
     {q: "103. Productivity means", options: ["A) Output per input", "B) Output only", "C) Input only", "D) Work only"], a: "A"},
@@ -321,7 +321,59 @@ const mcqs = [
     {q: "147. Organizational behaviour improves", options: ["A) Productivity", "B) Conflict", "C) Stress", "D) Absenteeism"], a: "A"},
     {q: "148. Motivation improves", options: ["A) Performance", "B) Conflict", "C) Stress", "D) Absenteeism"], a: "A"},
     {q: "149. Job satisfaction improves", options: ["A) Performance", "B) Turnover", "C) Absenteeism", "D) Conflict"], a: "A"},
-    {q: "150. Leadership improves", options: ["A) Organizational performance", "B) Conflict", "C) Stress", "D) Absenteeism"], a: "A"}
+    {q: "150. Leadership improves", options: ["A) Organizational performance", "B) Conflict", "C) Stress", "D) Absenteeism"], a: "A"},
+
+    // 151-200 New Set
+    {q: "151. What is need for power means?", options: ["A) Influence others", "B) Avoid people", "C) Help others", "D) Work alone"], a: "A"},
+    {q: "152. Equity theory was proposed by", options: ["A) Adams", "B) Maslow", "C) Herzberg", "D) Vroom"], a: "A"},
+    {q: "153. Equity theory focuses on", options: ["A) Fairness", "B) Effort", "C) Rewards", "D) Punishment"], a: "A"},
+    {q: "154. Communication refers to", options: ["A) Passing of information", "B) Writing notes", "C) Working alone", "D) Thinking"], a: "A"},
+    {q: "155. OCB stands for", options: ["A) Organizational citizenship behaviour", "B) Office control behaviour", "C) Organizational control base", "D) Office citizen behaviour"], a: "A"},
+    {q: "156. OCB example is", options: ["A) Helping coworkers", "B) Ignoring work", "C) Leaving job", "D) Complaining"], a: "A"},
+    {q: "157. Job satisfaction means", options: ["A) Positive feeling about job", "B) Stress", "C) Leaving job", "D) Low performance"], a: "A"},
+    {q: "158. Motivation refers to", options: ["A) Driving forces of behaviour", "B) Emotional state", "C) Thinking", "D) Learning"], a: "A"},
+    {q: "159. Maslow hierarchy has", options: ["A) 5 levels", "B) 4 levels", "C) 6 levels", "D) 3 levels"], a: "A"},
+    {q: "160. Lowest level of Maslow is", options: ["A) Physiological needs", "B) Safety needs", "C) Esteem", "D) Self-actualization"], a: "A"},
+    {q: "161. Food and water belong to", options: ["A) Physiological needs", "B) Safety needs", "C) Esteem", "D) Social"], a: "A"},
+    {q: "162. Highest level in Maslow", options: ["A) Self-actualization", "B) Esteem", "C) Safety", "D) Social"], a: "A"},
+    {q: "163. Learning means", options: ["A) Change in behaviour", "B) Thinking", "C) Feeling", "D) Growth"], a: "A"},
+    {q: "164. Reinforcement means", options: ["A) Strengthening behaviour", "B) Weakening behaviour", "C) Ignoring behaviour", "D) Punishing"], a: "A"},
+    {q: "165. Punishment leads to", options: ["A) Decrease behaviour", "B) Increase behaviour", "C) No change", "D) Motivation"], a: "A"},
+    {q: "166. Positive reinforcement means", options: ["A) Reward", "B) Punishment", "C) Ignoring", "D) Removal"], a: "A"},
+    {q: "167. Negative reinforcement means", options: ["A) Removing unpleasant stimulus", "B) Giving punishment", "C) Reward", "D) Ignoring"], a: "A"},
+    {q: "168. Leadership means", options: ["A) Influencing others", "B) Controlling others", "C) Ignoring", "D) Avoiding"], a: "A"},
+    {q: "169. Autocratic leadership", options: ["A) Centralized decision", "B) Group decision", "C) No decision", "D) Shared"], a: "A"},
+    {q: "170. Democratic leadership", options: ["A) Participation", "B) Control", "C) Force", "D) Isolation"], a: "A"},
+    {q: "171. Laissez-faire leadership", options: ["A) Freedom", "B) Control", "C) Strict rules", "D) No work"], a: "A"},
+    {q: "172. Manager functions include", options: ["A) Planning", "B) Organizing", "C) Controlling", "D) All"], a: "D"},
+    {q: "173. Expectancy theory proposed by", options: ["A) Vroom", "B) Adams", "C) Herzberg", "D) Maslow"], a: "A"},
+    {q: "174. Herzberg theory includes", options: ["A) Hygiene", "B) Motivators", "C) Both", "D) None"], a: "C"},
+    {q: "175. Hygiene factors include", options: ["A) Salary", "B) Working conditions", "C) Policies", "D) All"], a: "D"},
+    {q: "176. Motivators include", options: ["A) Achievement", "B) Recognition", "C) Growth", "D) All"], a: "D"},
+    {q: "177. McClelland theory includes", options: ["A) Achievement", "B) Power", "C) Affiliation", "D) All"], a: "D"},
+    {q: "178. Organizational behaviour studies", options: ["A) Human behaviour in organization", "B) Machine behaviour", "C) Market behaviour", "D) Financial behaviour"], a: "A"},
+    {q: "179. Group behaviour refers to", options: ["A) Behaviour in groups", "B) Individual behaviour", "C) Machine behaviour", "D) Market behaviour"], a: "A"},
+    {q: "180. Conflict means", options: ["A) Disagreement", "B) Agreement", "C) Cooperation", "D) Satisfaction"], a: "A"},
+    {q: "181. Stress refers to", options: ["A) Pressure", "B) Happiness", "C) Relaxation", "D) Motivation"], a: "A"},
+    {q: "182. Attitude refers to", options: ["A) Feelings about objects", "B) Behaviour only", "C) Skills", "D) Knowledge"], a: "A"},
+    {q: "183. Job design refers to", options: ["A) Structure of job", "B) Salary", "C) Promotion", "D) Training"], a: "A"},
+    {q: "184. Job analysis includes", options: ["A) Job description", "B) Job specification", "C) Both", "D) None"], a: "C"},
+    {q: "185. Training means", options: ["A) Improving skills", "B) Hiring employees", "C) Promotion", "D) Firing"], a: "A"},
+    {q: "186. Recruitment means", options: ["A) Hiring employees", "B) Training", "C) Promotion", "D) Firing"], a: "A"},
+    {q: "187. Feedback means", options: ["A) Response", "B) Question", "C) Order", "D) Instruction"], a: "A"},
+    {q: "188. Communication barriers include", options: ["A) Noise", "B) Language", "C) Perception", "D) All"], a: "D"},
+    {q: "189. Decision making means", options: ["A) Choosing alternatives", "B) Ignoring problems", "C) Avoiding decisions", "D) Random action"], a: "A"},
+    {q: "190. Organizational culture refers to", options: ["A) Shared values", "B) Rules only", "C) Work only", "D) Salary"], a: "A"},
+    {q: "191. Ethics refers to", options: ["A) Moral principles", "B) Rules only", "C) Laws only", "D) Policies"], a: "A"},
+    {q: "192. Equity theory deals with", options: ["A) Fairness", "B) Salary", "C) Effort", "D) Time"], a: "A"},
+    {q: "193. Maslow theory includes", options: ["A) 5 needs", "B) 3 needs", "C) 4 needs", "D) 6 needs"], a: "A"},
+    {q: "194. Highest level is", options: ["A) Self-actualization", "B) Esteem", "C) Safety", "D) Social"], a: "A"},
+    {q: "195. Learning is", options: ["A) Behaviour change", "B) Thinking", "C) Feeling", "D) Memory"], a: "A"},
+    {q: "196. Reinforcement is", options: ["A) Strengthening behaviour", "B) Reducing behaviour", "C) Ignoring", "D) Punishing"], a: "A"},
+    {q: "197. Punishment results in", options: ["A) Decrease behaviour", "B) Increase behaviour", "C) No change", "D) Motivation"], a: "A"},
+    {q: "198. Positive reinforcement is", options: ["A) Reward", "B) Punishment", "C) Ignore", "D) Remove"], a: "A"},
+    {q: "199. Negative reinforcement is", options: ["A) Remove unpleasant", "B) Punish", "C) Reward", "D) Ignore"], a: "A"},
+    {q: "200. Leadership refers to", options: ["A) Influencing others", "B) Controlling", "C) Avoiding", "D) Ignoring"], a: "A"}
 ];
 
 const root = document.getElementById('quiz-root');
